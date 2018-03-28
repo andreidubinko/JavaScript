@@ -12,12 +12,13 @@ let mainList = {
 
 for (let i = 0; i < 5; i++) {
 	let a = prompt("Какой тип товаров будем продовать?");
-}	mainList.shopGoods[i] = a;
+
 if ((typeof(a)) === 'string' && (typeof(a)) !== null && a !== '' && a.length < 50) { // если тип строки а равен строке, если он  не равен null, не равен пустоте и не превышает 50 символов то выведем верно
 	console.log('Верно');
 	mainList.shopGoods[i] = a;
 } else {
-
+	i = i - 1;
+}
 }
 // Способ 1
 
@@ -57,6 +58,6 @@ if (time < 0) {
 
 console.log(mainList);
 
-var budgetPerDay = budget / 30;
+var budgetPerDay = money / 30;
 alert("Ваш бюджет на один день из месяца равен " + budgetPerDay);
 
