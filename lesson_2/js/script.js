@@ -44,6 +44,7 @@ do {
 }
 while (shopGoods < 3);*/
 
+
 if (time < 0) {
 	console.log('Impossible');
 } else if(time > 8 &&  time < 20) {
@@ -58,3 +59,4 @@ console.log(mainList);
 
 var budgetPerDay = budget / 30;
 alert("Ваш бюджет на один день из месяца равен " + budgetPerDay);
+
